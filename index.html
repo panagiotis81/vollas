@@ -2,15 +2,32 @@
 <html>
 <head>
   <title></title>
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Centers the images within the container */
+      gap: 10px; /* Provides 10px space between the images */
+      /* You can also use margin-right on the first image if you prefer */
+    }
+    .image-container img {
+      width: 45%; /* Optional: Sets a responsive width for the images */
+      height: auto;
+    }
+  </style>
 </head>
-  <body>
-  <h1> </h1>
+<body>
+
+  <h1>Ειρήνη Παπαθανασίου</h1>
   <hr>
 
-  <img src="background.jpg" style="float:center; margin-right:10px;">
-  <img src="contact.png" style="float:center;">    
+  <div class="image-container">
+    <img src="background.jpg" alt="Background Image">
+    <img src="contact.png" alt="Contact Image">
+  </div>
+
   <hr>
- </body>
+
+</body>
 </html>
 
 <!DOCTYPE html>
