@@ -10,8 +10,9 @@
       /* You can also use margin-right on the first image if you prefer */
     }
     .image-container img {
-      width: 100%; /* Optional: Sets a responsive width for the images */
-      height: 512px;
+      flex-shrink: 0; /* Prevents the images from shrinking */
+      flex-basis: 300px; /* Sets a fixed base size for each image */
+      height: auto; /* Maintains the aspect ratio */
     }
   </style>
 </head>
