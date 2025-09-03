@@ -4,15 +4,18 @@
   <title></title>
   <style>
     .image-container {
-      display: flex;
-      justify-content: center; /* Centers the images within the container */
-      gap: 10px; /* Provides 10px space between the images */
-      /* You can also use margin-right on the first image if you prefer */
+      display: flex; /* Establishes a flex container */
+      justify-content: center; /* Horizontally centers the images */
+      gap: 10px; /* Maintains a stable 10px gap between the images */
+      width: 100%; /* Ensures the container fills the available space */
+      box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
     }
     .image-container img {
       flex-shrink: 0; /* Prevents the images from shrinking */
       flex-basis: 300px; /* Sets a fixed base size for each image */
       height: auto; /* Maintains the aspect ratio */
+      max-width: 70%; /* Optional: Prevents images from growing too large on bigger screens */
+
     }
   </style>
 </head>
